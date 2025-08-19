@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* ナビゲーションバーに表示するの文字の設定 */
+.navbar .nav-link{
+    font-size: 14px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+/* 選ばれている項目に下線を引く */
+.navbar .nav-link.active{
+    border-bottom: #fff 2px solid;
+}
+
+/* 画面サイズが小さくなったら縦線にする */
+@media screen and (max-width: 576px){
+    .navbar .nav-link.active{
+        border-left: #fff 2px solid;
+        border-bottom: none;
+    }
+}
+
+.carousel-item{
+    height: 32rem;
+}
+
+.carousel-item img{
+    height: 32rem;
+}
+
+.carousel-caption{
+    bottom: 3rem;
+}
+
+/* 背景画像を設定する */
+#corp-desk{
+    background: url("https://picsum.photos/id/35/1800/1800");
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+
+#top-massage img{
+    margin-top: -50px;
+}
+
+#top-massage .card:hover{
+    background: #69c099;
+    color: #fff;
+}
+
+#table-info tr:hover{
+    background-color: #69c099;
+    color: #fff;
+}
